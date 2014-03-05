@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="dynamic-map.css"/>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZnC1UgpGm10ADc5Oh9xKlfaBQZvip14c&sensor=false&sensor=false"></script>
+<script type="text/javascript" src="dynamic-map.js"></script>
+
+</head>
+
+<body>
+<h1>Flight Tracker</h1>
+	<h2>Airports</h2>
+<form>
+	<p class='dropdown'>Show airports within: </p>
+	<select id="milesList" class='dropdown'>
+		<option disabled="disabled" selected="selected">Select a value</option>
+		<option value="5">5 miles</option>
+		<option value="10">10 miles</option>
+		<option value="25" selected='true'>25 miles</option>
+		<option value="50">50 miles</option>
+		<option value="100">100 miles</option>
+	</select>
+	<p class='dropdown'>Select an airport: </p>
+	<select id="airportList" class='dropdown'>
+	<option disabled='true' selected='true'>None</option>
+	</select>
+
+	<h2>Flights</h2>
+	<p class='dropdown class='dropdown''>Arrivals: </p>
+	<select id="arrivalsList" class='dropdown'>
+		<option value="0" selected='true'>None</option>
+		<option value="60">In next hour</option>
+		<option value="120">In next two hours</option>
+	</select>
+	<p class='dropdown'>Departures: </p>
+	<select id="departuresList" class='dropdown'>
+		<option value="0" selected='true'>None</option>
+		<option value="60">In last hour</option>
+		<option value="120">In last 2 hours</option>
+	</select>
+</form>
+<div id="map-canvas"></div>
+</body>
+</html>

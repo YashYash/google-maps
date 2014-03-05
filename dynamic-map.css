@@ -1,0 +1,24 @@
+@charset "UTF-8";
+/* CSS Document */
+html{
+	height:100%;
+	width:100%;
+	background-color:blue;
+}
+
+#heads{
+	text-align: center;
+	color: white;
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif
+	}
+body{
+	height:100%;
+	width:100%;
+}
+#map-canvas{
+	height: 800px;
+	width: 800px;
+	margin-left:250px;
+}
+
+
